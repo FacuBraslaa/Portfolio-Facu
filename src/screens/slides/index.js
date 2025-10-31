@@ -1,2 +1,2 @@
-export { Slide } from "./Slide";
+export { Slide } from "./Slides.jsx";
 
