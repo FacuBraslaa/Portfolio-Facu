@@ -1,0 +1,2 @@
+export { Slide } from "./Slide";
+
