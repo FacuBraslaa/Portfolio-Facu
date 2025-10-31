@@ -24,6 +24,11 @@ export const Slide = () => {
         }
       >
         Proyectos
+        <img
+          className="nav-line-1"
+          alt="Line"
+          src="https://c.animaapp.com/381XIFDM/img/line-4.svg"
+        />
       </div>
 
       <div
@@ -34,6 +39,11 @@ export const Slide = () => {
         }
       >
         Servicios
+        <img
+          className="nav-line-2"
+          alt="Line"
+          src="https://c.animaapp.com/381XIFDM/img/line-4.svg"
+        />
       </div>
 
       <div
@@ -44,6 +54,11 @@ export const Slide = () => {
         }
       >
         Sobre mi
+        <img
+          className="nav-line-3"
+          alt="Line"
+          src="https://c.animaapp.com/381XIFDM/img/line-4.svg"
+        />
       </div>
 
       <img
@@ -180,6 +195,11 @@ export const Slide = () => {
       />
 
       <div className="text-wrapper-8">Servicios</div>
+      <img
+        className="servicios-line"
+        alt="Line"
+        src="https://c.animaapp.com/381XIFDM/img/line-6.svg"
+      />
 
       <p className="text-wrapper-9">
         Hola, soy Facundo, tengo 17 años y me especializo en desarrollo backend.
@@ -205,6 +225,11 @@ export const Slide = () => {
       />
 
       <div className="text-wrapper-10">Sobre mi</div>
+      <img
+        className="sobre-mi-line"
+        alt="Line"
+        src="https://c.animaapp.com/381XIFDM/img/line-6.svg"
+      />
 
       <div className="rectangle" />
 

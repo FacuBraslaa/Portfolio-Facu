@@ -1,9 +1,10 @@
 .slide {
   background-color: #edfaed;
   min-height: 3303px;
-  min-width: 1920px;
+  width: 1920px;
   position: relative;
-  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .slide .text-wrapper {
@@ -41,6 +42,30 @@
   top: 227px;
   width: 148px;
   cursor: pointer;
+}
+
+.slide .nav-line-1 {
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 37px;
+  width: 137px;
+}
+
+.slide .nav-line-2 {
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 37px;
+  width: 137px;
+}
+
+.slide .nav-line-3 {
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 37px;
+  width: 137px;
 }
 
 .slide .text-wrapper-2 {
@@ -270,6 +295,14 @@
   width: 498px;
 }
 
+.slide .servicios-line {
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 1393px;
+  width: 1920px;
+}
+
 .slide .text-wrapper-9 {
   color: #337164;
   font-family: "Inria Sans", Helvetica;
@@ -319,6 +352,14 @@
   top: 2357px;
   white-space: nowrap;
   width: 506px;
+}
+
+.slide .sobre-mi-line {
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 2530px;
+  width: 1920px;
 }
 
 .slide .rectangle {
