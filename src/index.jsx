@@ -7,13 +7,23 @@ const container = document.getElementById("app");
 const root = createRoot(container);
 
 function App() {
+  React.useEffect(() => {
+    const updateScale = () => {
+      const scale = Math.min(window.innerWidth / 1920, 1);
+      document.documentElement.style.setProperty('--scale', scale);
+    };
+    
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, []);
+
   return (
     <div style={{ 
       display: "flex", 
       justifyContent: "center",
       width: "100%",
-      overflowX: "auto",
-      minWidth: "100vw"
+      overflow: "hidden",
     }}>
       <Slide />
     </div>

@@ -4,32 +4,89 @@
   width: 1920px;
   position: relative;
   margin: 0 auto;
-  overflow-x: hidden;
+  transform: scale(var(--scale, 1));
+  transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slide .text-wrapper {
-  aspect-ratio: 4.34;
   color: #337164;
   font-family: "Inria Serif", Helvetica;
   font-size: 110px;
   font-weight: 400;
-  left: 735px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 39px;
+  text-align: center;
+  margin-top: 39px;
   white-space: nowrap;
-  width: 506px;
+}
+
+.slide .nav-container {
+  display: flex;
+  gap: 56px;
+  margin-top: 60px;
+  position: relative;
 }
 
 .slide .line {
   height: 3px;
-  left: 0;
+  width: 100%;
+  position: absolute;
+  background-color: #005b00;
+}
+
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  cursor: pointer;
+  .slide .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 39px;
+    position: relative;
+  }
+  position: relative;
+  .slide .nav-wrapper {
+    display: flex;
+    gap: 56px;
+    margin: 40px 0;
+  }
+  padding-bottom: 10px;
+}
+
+.slide .div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #005b00;
+}
+
+.slide .line {
+    margin-top: 20px;
   position: absolute;
   top: 279px;
   width: 1920px;
+  .slide .proyectos-section {
+    padding: 60px 0;
+  }
 }
+  .slide .years-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
 
+  .slide .year-item {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 .slide .div {
   color: #005b00;
   font-family: "Inter", Helvetica;
@@ -52,6 +109,10 @@
   width: 137px;
 }
 
+  .slide .servicios-section {
+    padding: 60px 0;
+    text-align: center;
+  }
 .slide .nav-line-2 {
   height: 3px;
   left: 0;
@@ -73,6 +134,10 @@
   font-family: "Inter", Helvetica;
   font-size: 30px;
   font-weight: 600;
+  .slide .sobre-mi-section {
+    padding: 60px 0;
+    text-align: center;
+  }
   left: 950px;
   letter-spacing: 0;
   line-height: normal;
@@ -83,6 +148,13 @@
 }
 
 .slide .text-wrapper-3 {
+  .slide .profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 100px;
+  }
   color: #005b00;
   font-family: "Inter", Helvetica;
   font-size: 30px;
@@ -104,46 +176,53 @@
   width: 137px;
 }
 
-.slide .text-wrapper-4 {
-  color: #2aa289;
-  font-family: "Inter", Helvetica;
-  font-size: 50px;
-  font-weight: 600;
-  left: 281px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 353px;
-  white-space: nowrap;
-  width: 136px;
+.slide .projects-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
+  margin-top: 50px;
+  /* Navegación */
 }
 
-.slide .text-wrapper-5 {
-  color: #2aa289;
-  font-family: "Inter", Helvetica;
-  font-size: 50px;
-  font-weight: 600;
-  left: 939px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 353px;
-  white-space: nowrap;
-  width: 134px;
+.slide .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
 }
 
+.slide .text-wrapper-4,
+.slide .text-wrapper-5,
 .slide .text-wrapper-6 {
+  .slide .div:after,
+  .slide .text-wrapper-2:after,
+  .slide .text-wrapper-3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #005b00;
+  }
   color: #2aa289;
+  /* Imágenes de proyectos */
   font-family: "Inter", Helvetica;
   font-size: 50px;
   font-weight: 600;
-  left: 1567px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 314px;
-  white-space: nowrap;
-  width: 138px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slide .project-content {
+  text-align: center;
+  color: #337164;
+  font-family: "Inria Sans", Helvetica;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 20px;
+  max-width: 500px;
 }
 
 .slide .chacami-n-en {
