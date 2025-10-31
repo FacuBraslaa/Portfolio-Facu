@@ -8,7 +8,13 @@ const root = createRoot(container);
 
 function App() {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{ 
+      display: "flex", 
+      justifyContent: "center",
+      width: "100%",
+      overflowX: "auto",
+      minWidth: "100vw"
+    }}>
       <Slide />
     </div>
   );
