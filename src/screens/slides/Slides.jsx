@@ -4,6 +4,10 @@ import "./style.css";
 export const Slide = () => {
   return (
     <div className="slide" data-model-id="4:70">
+      {/* Anchors for navigation */}
+      <div id="proyectos" style={{position: 'absolute', top: '350px', left: 0, width: '1px', height: '1px'}} />
+      <div id="servicios" style={{position: 'absolute', top: '1219px', left: 0, width: '1px', height: '1px'}} />
+      <div id="sobre-mi" style={{position: 'absolute', top: '2357px', left: 0, width: '1px', height: '1px'}} />
       <div className="text-wrapper">Portafolio</div>
 
       <img
@@ -12,11 +16,35 @@ export const Slide = () => {
         src="https://c.animaapp.com/381XIFDM/img/line-6.svg"
       />
 
-      <div className="div">Proyectos</div>
+      <div
+        className="div"
+        role="button"
+        onClick={() =>
+          document.getElementById("proyectos")?.scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        Proyectos
+      </div>
 
-      <div className="text-wrapper-2">Servicios</div>
+      <div
+        className="text-wrapper-2"
+        role="button"
+        onClick={() =>
+          document.getElementById("servicios")?.scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        Servicios
+      </div>
 
-      <div className="text-wrapper-3">Sobre mi</div>
+      <div
+        className="text-wrapper-3"
+        role="button"
+        onClick={() =>
+          document.getElementById("sobre-mi")?.scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        Sobre mi
+      </div>
 
       <img
         className="img"
